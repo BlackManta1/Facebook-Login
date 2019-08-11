@@ -24,7 +24,8 @@ class ViewController: UIViewController, LoginButtonDelegate {
         // certaines informations sont soumis a une review de la part de Facebook
         
         loginButton.delegate = self
-        loginButton.center = view.center
+        //loginButton.center = view.center
+        loginButton.frame = CGRect(x: 16, y: view.frame.maxY/2, width: view.frame.width - 32, height: 50)
         view.addSubview(loginButton)
         
         if AccessToken.isCurrentAccessTokenActive {
@@ -67,16 +68,12 @@ class ViewController: UIViewController, LoginButtonDelegate {
                                     userDetailsLabel.text = "Name : \(name) - Email : \(email)"
                                     userDetailsLabel.textAlignment = .center
                                     self.view.addSubview(userDetailsLabel)
-                                    
                                 }
-                                
                             }
                         }
                     }
                 }
-                
             }
-            
         }
         
     }
@@ -84,8 +81,6 @@ class ViewController: UIViewController, LoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("User logged out")
     }
-    
-    
     
 }
 
