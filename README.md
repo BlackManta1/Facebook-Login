@@ -10,3 +10,12 @@ Learn how to implement a Facebook Login and retrieve a different kind of data.
 <img src="https://user-images.githubusercontent.com/46055179/59964251-87637100-950f-11e9-8005-a33e2338b0c7.PNG" width="250">
 <img src="https://user-images.githubusercontent.com/46055179/59964250-87637100-950f-11e9-981b-33d9ad52cdf7.PNG" width="250">
 </p>
+
+## Key informations:
+[developers.facebook.com](https://developers.facebook.com/docs/graph-api/reference/user)
+
+## Most useful code:
+
+```swift
+
+```
